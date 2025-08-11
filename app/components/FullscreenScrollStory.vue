@@ -34,7 +34,7 @@ interface Article {
   text: string[];
 }
 
-defineProps<{
+const props = defineProps<{
   src: string;
   alt: string;
   articles: Article[];
@@ -79,7 +79,10 @@ onMounted(() => {
           });
         }
       })
-      .onStepExit(() => {
+      .onStepExit(({ direction }) => {
+        if (index >= scrollTriggers.value.length - 1 && direction === "down")
+          return;
+
         if (textBlocks.value[index]) {
           gsap.to(textBlocks.value[index], {
             opacity: 1,
