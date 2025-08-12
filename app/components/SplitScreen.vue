@@ -2,8 +2,12 @@
   <div class="bg-gray-100">
     <section class="min-h-screen flex items-center container">
       <div
-        class="container px-16 mx-auto flex"
-        :class="{ 'flex-row-reverse': visual.align === 'left' }"
+        class="container md:px-16 px-4 mx-auto flex"
+        :class="
+          visual.align == 'left'
+            ? 'md:flex-row-reverse flex-col-reverse'
+            : 'md:flex-row flex-col-reverse'
+        "
       >
         <!-- Text Column -->
         <div
@@ -11,7 +15,7 @@
           :class="visual.align == 'left' ? 'items-end' : ''"
         >
           <div
-            class="space-y-6 px-4 py-48 max-w-sm flex flex-col"
+            class="space-y-6 md:py-48 py-12 max-w-sm flex flex-col"
             ref="textRef"
           >
             <p
@@ -25,8 +29,10 @@
         </div>
 
         <!-- Image Column -->
-        <div class="relative px-4 w-full">
-          <div class="sticky top-0 h-screen flex flex-col justify-center">
+        <div class="relative w-full">
+          <div
+            class="sticky top-0 lg:h-screen py-12 flex flex-col justify-center"
+          >
             <img
               ref="imageRef"
               :src="visual.src"

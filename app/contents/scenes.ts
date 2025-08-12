@@ -10,11 +10,11 @@ export const scenes = [
       alt: "Hero Image",
       articles: [
         `
-        <p class="font-gelasio text-3xl"> Lorem ipsum dolor sit amet consectetur  <br/> adipisicing elit Consequuntur, </p>
-        <p class="font-gelasio text-3xl mt-6"> Ipsum dolor sit amet consectetur <br/> Consequuntur ex expedita soluta </p>
+        <p class="font-gelasio md:text-3xl text-2xl"> Lorem ipsum dolor sit amet consectetur  <br/> adipisicing elit Consequuntur, </p>
+        <p class="font-gelasio md:text-3xl text-2xl md:mt-6 mt-4"> Ipsum dolor sit amet consectetur <br/> Consequuntur ex expedita soluta </p>
         `,
         `
-        <p class="capitalize text-[100px] font-fredoka leading-none"> My <br/> Brother's <br/> Keeper</p>
+        <p class="capitalize md:text-[100px] text-[82px] font-fredoka leading-none"> My <br/> Brother's <br/> Keeper</p>
         `,
       ],
     },
@@ -47,6 +47,9 @@ export const scenes = [
           adipisci. Lorem ipsum dolor sit, amet consectetur adipisicing
           elit. Eveniet cupiditate nostrum quia voluptatum, tempora harum
           sunt, optio cum, magnam iusto ipsum recusandae facere culpa
+          deserunt tenetur atque amet aut mollitia? amet consectetur adipisicing
+          elit. Eveniet cupiditate nostrum quia voluptatum, tempora harum
+          sunt, optio cum, magnam iusto ipsum recusandae facere culpa
           deserunt tenetur atque amet aut mollitia?`,
       ],
     },
@@ -57,7 +60,7 @@ export const scenes = [
       visual: {
         src: "https://images.unsplash.com/photo-1754079132679-d9bbe1ba79cf?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
         alt: "Article image 1",
-        class: "max-w-screen-md",
+        class: "max-w-screen-lg",
         align: "left",
       },
       articles: [
@@ -77,6 +80,9 @@ export const scenes = [
           repellendus saepe doloremque ea exercitationem? Beatae, officiis
           vitae aperiam animi aliquam quis facere veniam quaerat asperiores
           adipisci. Lorem ipsum dolor sit, amet consectetur adipisicing
+          elit. Eveniet cupiditate nostrum quia voluptatum, tempora harum
+          sunt, optio cum, magnam iusto ipsum recusandae facere culpa
+          deserunt tenetur atque amet aut mollitia? amet consectetur adipisicing
           elit. Eveniet cupiditate nostrum quia voluptatum, tempora harum
           sunt, optio cum, magnam iusto ipsum recusandae facere culpa
           deserunt tenetur atque amet aut mollitia?`,
